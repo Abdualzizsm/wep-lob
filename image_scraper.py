@@ -14,6 +14,7 @@ url = 'https://www.popmart.com/'
 
 # Directory to save images
 save_dir = os.path.join(os.getcwd(), 'www', 'images')
+os.makedirs(os.path.dirname(save_dir), exist_ok=True)
 os.makedirs(save_dir, exist_ok=True)
 
 async def main():
