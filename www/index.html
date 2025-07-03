@@ -3,256 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لابوبو - المتجر الرسمي | Labubu Official Store</title>
-    <meta name="description" content="المتجر الرسمي للعبة لابوبو المشهورة عالمياً. اكتشف مجموعات لابوبو الحصرية والنادرة مع التوصيل المجاني.">
-    <meta name="keywords" content="لابوبو, Labubu, دمية لابوبو, ألعاب فنية, Pop Mart, Designer Toys">
-    <link rel="icon" href="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=32&h=32&fit=crop&crop=faces" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="دليلك الأول في العالم العربي لاستكشاف وشراء دمى لابوبو الأصلية. شارك في مسابقة لابوبو الأسبوع، وتعرف على الأسعار، المجموعات، وكيف تميز الأصلي من المقلد.">
+    <title>دليل لابوبو العربي | كل ما يخص دمى لابوبو الأصلية</title>
+    <meta name="keywords" content="لابوبو, Labubu, Pop Mart, The Monsters, Zimomo, شراء لابوبو, دليل لابوبو, لابوبو الأصلية">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="دليل لابوبو العربي | كل ما يخص دمى لابوبو الأصلية">
+    <meta property="og:description" content="دليلك الأول لكل ما يتعلق بعالم لابوبو. شارك، تعلم، واكتشف.">
+    <meta property="og:image" content="https://i.ebayimg.com/images/g/s~MAAOSw3gRj3wA-/s-l1600.jpg">
+    <meta property="og:url" content="https://arabic-labubu-guide.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=60&h=60&fit=crop&crop=faces" alt="Labubu Logo">
-                <span>لابوبو</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#products">المنتجات</a></li>
-                <li><a href="#collections">المجموعات</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-            <div class="nav-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://i.pinimg.com/originals/a7/67/85/a767852e947793cf2c6141659728b845.png" alt="Labubu Logo" class="logo-img">
+                <span>دليل لابوبو العربي</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="contest.html">لابوبو الأسبوع</a>
+                <a href="guide.html">الدليل الشامل</a>
+                <a href="collections.html">المجموعات</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contest.html" class="btn btn-primary"><i class="fas fa-vote-yea"></i> صوّت الآن</a>
+                <div class="user-points">
+                    <i class="fas fa-star"></i>
+                    <span id="userPoints">0</span>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>مرحباً بكم في عالم <span class="highlight">لابوبو</span></h1>
-            <p>اكتشف مجموعات لابوبو الحصرية والنادرة من أشهر العلامات التجارية في عالم الألعاب الفنية</p>
-            <div class="hero-buttons">
-                <button class="btn-primary">تسوق الآن</button>
-                <button class="btn-secondary">اكتشف المجموعات</button>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&h=600&fit=crop&crop=faces" alt="Labubu Hero">
-        </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section id="products" class="featured-products">
+    <main id="hero" class="hero-section">
         <div class="container">
-            <h2>المنتجات المميزة</h2>
-            <p class="section-subtitle">اكتشف أحدث وأجمل منتجات لابوبو</p>
-            
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=300&fit=crop" alt="Labubu Classic">
-                        <div class="product-badge">جديد</div>
-                        <div class="product-actions">
-                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
-                            <button class="btn-icon"><i class="fas fa-eye"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>لابوبو الكلاسيكية</h3>
-                        <p class="product-price">
-                            <span class="current-price">25.99 $</span>
-                            <span class="old-price">35.99 $</span>
-                        </p>
-                        <button class="btn-cart">أضف للسلة</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1566454544286-64ad41d11765?w=300&h=300&fit=crop" alt="Labubu Limited">
-                        <div class="product-badge limited">محدود</div>
-                        <div class="product-actions">
-                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
-                            <button class="btn-icon"><i class="fas fa-eye"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>لابوبو الذهبية - إصدار محدود</h3>
-                        <p class="product-price">
-                            <span class="current-price">49.99 $</span>
-                        </p>
-                        <button class="btn-cart">أضف للسلة</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop" alt="Labubu Rainbow">
-                        <div class="product-badge">الأكثر مبيعاً</div>
-                        <div class="product-actions">
-                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
-                            <button class="btn-icon"><i class="fas fa-eye"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>لابوبو قوس قزح</h3>
-                        <p class="product-price">
-                            <span class="current-price">32.99 $</span>
-                        </p>
-                        <button class="btn-cart">أضف للسلة</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=300&h=300&fit=crop" alt="Labubu Special">
-                        <div class="product-actions">
-                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
-                            <button class="btn-icon"><i class="fas fa-eye"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>لابوبو الليل المضيء</h3>
-                        <p class="product-price">
-                            <span class="current-price">28.99 $</span>
-                        </p>
-                        <button class="btn-cart">أضف للسلة</button>
-                    </div>
+            <div class="hero-content">
+                <h1>أكبر مرجع عربي لعالم لابوبو</h1>
+                <p>اكتشف أسرار دمى The Monsters، قارن بين الإصدارات، وشارك في مجتمعنا لاختيار لابوبو الأسبوع. كل ما تحتاجه في مكان واحد.</p>
+                <div class="hero-buttons">
+                    <a href="#contest" class="btn btn-primary-solid"><i class="fas fa-trophy"></i> اذهب للمسابقة</a>
+                    <a href="#guide" class="btn btn-secondary-outline"><i class="fas fa-book-open"></i> تصفح الدليل</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Collections -->
-    <section id="collections" class="collections">
-        <div class="container">
-            <h2>مجموعاتنا الحصرية</h2>
-            <div class="collections-grid">
-                <div class="collection-card">
-                    <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400&h=250&fit=crop" alt="Summer Collection">
-                    <div class="collection-overlay">
-                        <h3>مجموعة الصيف</h3>
-                        <p>15 قطعة فريدة</p>
-                        <button class="btn-white">اكتشف المزيد</button>
-                    </div>
-                </div>
-                <div class="collection-card">
-                    <img src="https://images.unsplash.com/photo-1578761499019-d7eca1c6b966?w=400&h=250&fit=crop" alt="Limited Edition">
-                    <div class="collection-overlay">
-                        <h3>الإصدار المحدود</h3>
-                        <p>5 قطع نادرة فقط</p>
-                        <button class="btn-white">اكتشف المزيد</button>
-                    </div>
-                </div>
-                <div class="collection-card">
-                    <img src="https://images.unsplash.com/photo-1566127992372-b4a925ba4c11?w=400&h=250&fit=crop" alt="Classic Series">
-                    <div class="collection-overlay">
-                        <h3>السلسلة الكلاسيكية</h3>
-                        <p>20 قطعة أصلية</p>
-                        <button class="btn-white">اكتشف المزيد</button>
-                    </div>
-                </div>
+            <div class="hero-image-container">
+                <img src="https://ae01.alicdn.com/kf/S082b8b9b0b4a4b2b9b2b5b5b5b5b5b5bY/POP-MART-The-Monsters-Toys-Series-Blind-Box-Cute-Labubu-Zimomo-Action-Figure-Kawaii-Doll-Gift.jpg_Q90.jpg_.webp" alt="مجموعة دمى لابوبو" class="hero-image">
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    
+
+    <!-- Featured Sections -->
+    <section class="featured-sections">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>عن لابوبو</h2>
-                    <p>لابوبو هي شخصية محبوبة من عالم الألعاب الفنية، تجمع بين الجمال والغموض. تم إنشاؤها بعناية فائقة لتكون رفيقك المثالي في عالم الخيال والإبداع.</p>
-                    <p>نحن نقدم منتجات أصلية 100% مع ضمان الجودة والأصالة. كل قطعة تحكي قصة وتحمل في طياتها سحر فريد يجعلها مميزة.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-shipping-fast"></i>
-                            <span>توصيل مجاني</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>ضمان الأصالة</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <span>صنع بحب</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=400&fit=crop" alt="About Labubu">
-                </div>
+            <div class="featured-card">
+                <div class="featured-icon"><i class="fas fa-crown"></i></div>
+                <h3>مسابقة لابوبو الأسبوع</h3>
+                <p>صوّت لدميتك المفضلة، شاهد النتائج المباشرة، وكن جزءاً من الحدث الأسبوعي الأكبر لمجتمع لابوبو.</p>
+                <a href="contest.html" class="btn btn-primary-solid">اذهب للمسابقة</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <h2>ابق على اطلاع</h2>
-            <p>اشترك في نشرتنا البريدية لتكون أول من يعلم بالمنتجات الجديدة والعروض الحصرية</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="أدخل بريدك الإلكتروني">
-                <button class="btn-primary">اشتراك</button>
+            <div class="featured-card">
+                <div class="featured-icon"><i class="fas fa-book-open"></i></div>
+                <h3>الدليل الشامل</h3>
+                <p>من التمييز بين الأصلي والمقلد إلى استعراض المجموعات النادرة، دليلك الكامل في عالم لابوبو.</p>
+                <a href="guide.html" class="btn btn-secondary-outline">تصفح الدليل</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>لابوبو</h3>
-                    <p>المتجر الرسمي للعبة لابوبو المشهورة عالمياً</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                <p>&copy; 2025 دليل لابوبو العربي. موقع للمعجبين تم إنشاؤه بواسطة Cascade AI.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
                 </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#products">المنتجات</a></li>
-                        <li><a href="#collections">المجموعات</a></li>
-                        <li><a href="#about">من نحن</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>خدمة العملاء</h4>
-                    <ul>
-                        <li><a href="#">تواصل معنا</a></li>
-                        <li><a href="#">سياسة الإرجاع</a></li>
-                        <li><a href="#">الشحن والتوصيل</a></li>
-                        <li><a href="#">الأسئلة الشائعة</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>معلومات التواصل</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +966 123 456 789</p>
-                        <p><i class="fas fa-envelope"></i> info@labubu.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> الرياض, المملكة العربية السعودية</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 لابوبو. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
+    
+    <!-- Notification Area -->
+    <div id="notifications"></div>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

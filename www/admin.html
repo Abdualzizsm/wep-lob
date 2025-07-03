@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | دليل لابوبو العربي</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Admin Stylesheet -->
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-cogs"></i> لوحة التحكم</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> نظرة عامة</a>
+                <a href="#contest-management"><i class="fas fa-crown"></i> إدارة المسابقة</a>
+                <a href="#users"><i class="fas fa-users"></i> المستخدمون</a>
+                <a href="index.html" class="back-to-site"><i class="fas fa-arrow-left"></i> العودة للموقع</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>إدارة مسابقة لابوبو الأسبوع</h1>
+                <p>من هنا يمكنك تغيير المرشحين للمسابقة الأسبوعية القادمة.</p>
+            </header>
+
+            <section id="contest-management" class="admin-section">
+                <div class="admin-widget">
+                    <h4>إضافة مرشح جديد</h4>
+                    <form id="add-nominee-form">
+                        <div class="form-group">
+                            <label for="nominee-name">اسم الدمية</label>
+                            <input type="text" id="nominee-name" placeholder="مثال: لابوبو المخبوزات" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nominee-series">اسم المجموعة</label>
+                            <input type="text" id="nominee-series" placeholder="مثال: The Monsters Sweets" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nominee-image">رابط صورة الدمية</label>
+                            <input type="url" id="nominee-image" placeholder="https://example.com/image.jpg" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إضافة للمسابقة</button>
+                    </form>
+                </div>
+
+                <div class="admin-widget">
+                    <h4>المرشحون الحاليون (4)</h4>
+                    <ul id="current-nominees" class="nominee-list">
+                        <li>
+                            <img src="https://i.pinimg.com/originals/7c/89/f6/7c89f664a78426f437b0369c5f87b32a.jpg" alt="">
+                            <span>لابوبو فاكهة الخريف</span>
+                            <button class="btn-remove"><i class="fas fa-trash-alt"></i></button>
+                        </li>
+                        <li>
+                            <img src="https://i.etsystatic.com/43171817/r/il/d3343b/4904578969/il_fullxfull.4904578969_i23l.jpg" alt="">
+                            <span>زيمومو الشبح</span>
+                            <button class="btn-remove"><i class="fas fa-trash-alt"></i></button>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/originals/dc/8e/18/dc8e184711f58354215348190343ef81.jpg" alt="">
+                            <span>لابوبو الماكرون</span>
+                            <button class="btn-remove"><i class="fas fa-trash-alt"></i></button>
+                        </li>
+                        <li>
+                            <img src="https://i.ebayimg.com/images/g/c~YAAOSw~NRkqP~U/s-l1600.jpg" alt="">
+                            <span>لابوبو التخييم</span>
+                            <button class="btn-remove"><i class="fas fa-trash-alt"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

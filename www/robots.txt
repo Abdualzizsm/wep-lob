@@ -1,0 +1,13 @@
+# Allow all user agents
+User-agent: *
+
+# Allow all content
+Allow: /
+
+# Disallow admin pages from being crawled
+Disallow: /admin.html
+Disallow: /admin.js
+Disallow: /admin-styles.css
+
+# Sitemap location
+Sitemap: https://weplop.netlify.app/sitemap.xml

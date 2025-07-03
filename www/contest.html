@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صوّت الآن في مسابقة لابوبو الأسبوع #47! اختر دميتك المفضلة، شاهد الإحصائيات المباشرة، واجمع النقاط لتكون من أكبر داعمي لابوبو في العالم العربي.">
+    <title>مسابقة لابوبو الأسبوع | دليل لابوبو العربي</title>
+    <meta name="description" content="صوّت الآن في مسابقة لابوبو الأسبوع، شاهد النتائج المباشرة، واربح النقاط. من ستكون لابوبو الأسبوع القادمة؟">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://i.pinimg.com/originals/a7/67/85/a767852e947793cf2c6141659728b845.png" alt="Labubu Logo" class="logo-img">
+                <span>دليل لابوبو العربي</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="contest.html" class="active">لابوبو الأسبوع</a>
+                <a href="guide.html">الدليل الشامل</a>
+                <a href="collections.html">المجموعات</a>
+            </nav>
+            <div class="header-actions">
+                 <div class="user-points">
+                    <i class="fas fa-star"></i>
+                    <span id="userPoints">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contest Section -->
+    <section id="contest" class="contest-section page-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-crown"></i> مسابقة لابوبو الأسبوع</h2>
+                <p>صوّت لدميتك المفضلة من المرشحين هذا الأسبوع واربح 10 نقاط!</p>
+            </div>
+            <div class="countdown-timer">
+                <p>المسابقة تنتهي خلال: <span id="timeRemaining"></span></p>
+            </div>
+            <div class="nominees-grid">
+                <!-- Nominee 1 -->
+                <div class="nominee-card" data-id="labubu_fall">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/originals/7c/89/f6/7c89f664a78426f437b0369c5f87b32a.jpg" alt="لابوبو فاكهة الخريف">
+                    </div>
+                    <div class="card-body">
+                        <h3>لابوبو فاكهة الخريف</h3>
+                        <p>إصدار: The Monsters Fruits</p>
+                        <div class="vote-stats">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                            <span class="vote-count">4,512 صوت</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="vote('labubu_fall')"><i class="fas fa-heart"></i> صوّت لي</button>
+                    </div>
+                </div>
+                <!-- Nominee 2 -->
+                <div class="nominee-card" data-id="zimomo_ghost">
+                    <div class="card-image">
+                        <img src="https://i.etsystatic.com/43171817/r/il/d3343b/4904578969/il_fullxfull.4904578969_i23l.jpg" alt="زيمومو الشبح">
+                    </div>
+                    <div class="card-body">
+                        <h3>زيمومو الشبح</h3>
+                        <p>إصدار: The Monsters Mischief</p>
+                        <div class="vote-stats">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 25%;"></div></div>
+                            <span class="vote-count">2,534 صوت</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="vote('zimomo_ghost')"><i class="fas fa-heart"></i> صوّت لي</button>
+                    </div>
+                </div>
+                <!-- Nominee 3 -->
+                <div class="nominee-card" data-id="labubu_macaron">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/originals/dc/8e/18/dc8e184711f58354215348190343ef81.jpg" alt="لابوبو الماكرون">
+                    </div>
+                    <div class="card-body">
+                        <h3>لابوبو الماكرون</h3>
+                        <p>إصدار: Sweet Bean Labubu</p>
+                        <div class="vote-stats">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 15%;"></div></div>
+                            <span class="vote-count">1,588 صوت</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="vote('labubu_macaron')"><i class="fas fa-heart"></i> صوّت لي</button>
+                    </div>
+                </div>
+                 <!-- Nominee 4 -->
+                <div class="nominee-card" data-id="labubu_camping">
+                    <div class="card-image">
+                        <img src="https://i.ebayimg.com/images/g/c~YAAOSw~NRkqP~U/s-l1600.jpg" alt="لابوبو التخييم">
+                    </div>
+                    <div class="card-body">
+                        <h3>لابوبو التخييم</h3>
+                        <p>إصدار: The Monsters Camping</p>
+                        <div class="vote-stats">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 15%;"></div></div>
+                            <span class="vote-count">1,410 صوت</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="vote('labubu_camping')"><i class="fas fa-heart"></i> صوّت لي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 دليل لابوبو العربي. موقع للمعجبين تم إنشاؤه بواسطة Cascade AI.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Notification Area -->
+    <div id="notifications"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
